@@ -1,96 +1,128 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
-  <title id="t">SDrole</title>
-  <desc id="d">Rendering of a Kerr black hole: shadow, photon ring and a lensed accretion disk with relativistic beaming.</desc>
+  <title id="t">SDrole — technical terminal</title>
+  <desc id="d">Dark market-terminal style profile banner with Kerr black-hole rendering and live-looking validated project metrics.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#04060b"/>
-      <stop offset="1" stop-color="#0a0f1e"/>
+      <stop offset="0" stop-color="#05070a"/>
+      <stop offset=".55" stop-color="#070a0f"/>
+      <stop offset="1" stop-color="#0b1016"/>
     </linearGradient>
-    <radialGradient id="bloom" cx="880" cy="165" r="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff9a3c" stop-opacity=".34"/>
-      <stop offset=".30" stop-color="#e0601f" stop-opacity=".16"/>
-      <stop offset=".65" stop-color="#7a2a14" stop-opacity=".05"/>
-      <stop offset="1" stop-color="#7a2a14" stop-opacity="0"/>
+    <radialGradient id="bloom" cx="900" cy="153" r="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9a3c" stop-opacity=".28"/>
+      <stop offset=".32" stop-color="#e0601f" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#e0601f" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="beam" x1="600" y1="0" x2="1160" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff3dc" stop-opacity=".95"/>
-      <stop offset=".30" stop-color="#ffd08a"/>
-      <stop offset=".55" stop-color="#f08a36"/>
-      <stop offset=".80" stop-color="#b43c18"/>
-      <stop offset="1" stop-color="#4b1608" stop-opacity=".55"/>
+    <linearGradient id="disk" x1="640" y1="0" x2="1150" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff2d2"/>
+      <stop offset=".26" stop-color="#ffd18a"/>
+      <stop offset=".58" stop-color="#f28a35"/>
+      <stop offset=".82" stop-color="#bc431b"/>
+      <stop offset="1" stop-color="#6a210e" stop-opacity=".55"/>
     </linearGradient>
-    <linearGradient id="ring" x1="790" y1="0" x2="970" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff8ea"/>
-      <stop offset=".5" stop-color="#ffc67a"/>
-      <stop offset="1" stop-color="#c2531e"/>
+    <linearGradient id="ring" x1="820" y1="0" x2="975" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff7dd"/>
+      <stop offset=".52" stop-color="#ffb85f"/>
+      <stop offset="1" stop-color="#bd481e"/>
     </linearGradient>
-    <linearGradient id="fadeText" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#04060b" stop-opacity=".85"/>
-      <stop offset=".55" stop-color="#04060b" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#04060b" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffd08a"/>
-      <stop offset="1" stop-color="#e0601f"/>
-    </linearGradient>
-    <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
-    <filter id="blur14" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
-    <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation=".6"/></filter>
-    <clipPath id="card"><rect width="1200" height="320" rx="18"/></clipPath>
-    <clipPath id="upper"><rect x="500" y="60" width="760" height="105"/></clipPath>
-    <clipPath id="lower"><rect x="500" y="165" width="760" height="120"/></clipPath>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#223041" stroke-width=".6" opacity=".22"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5H4" stroke="#ffffff" stroke-width=".35" opacity=".03"/>
+    </pattern>
+    <filter id="glow8" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="glow3" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="card"><rect width="1200" height="320" rx="16"/></clipPath>
+    <clipPath id="upper"><rect x="590" y="45" width="610" height="110"/></clipPath>
+    <clipPath id="lower"><rect x="590" y="155" width="610" height="118"/></clipPath>
   </defs>
+
   <g clip-path="url(#card)">
     <rect width="1200" height="320" fill="url(#bg)"/>
-    <g fill="#cfd8ec">
-      <circle cx="612" cy="38" r=".9" opacity=".55"/><circle cx="668" cy="271" r="1" opacity=".5"/>
-      <circle cx="702" cy="64" r=".7" opacity=".6"/><circle cx="731" cy="292" r=".8" opacity=".4"/>
-      <circle cx="768" cy="24" r="1.1" opacity=".5"/><circle cx="803" cy="268" r=".7" opacity=".55"/>
-      <circle cx="846" cy="41" r=".8" opacity=".45"/><circle cx="952" cy="27" r=".9" opacity=".6"/>
-      <circle cx="1004" cy="58" r=".7" opacity=".5"/><circle cx="1041" cy="283" r="1" opacity=".45"/>
-      <circle cx="1078" cy="34" r="1.2" opacity=".55"/><circle cx="1112" cy="256" r=".8" opacity=".5"/>
-      <circle cx="1146" cy="82" r=".7" opacity=".5"/><circle cx="1167" cy="196" r=".9" opacity=".4"/>
-      <circle cx="590" cy="214" r=".7" opacity=".4"/><circle cx="1128" cy="300" r=".7" opacity=".4"/>
-      <circle cx="920" cy="302" r=".8" opacity=".35"/><circle cx="741" cy="118" r=".6" opacity=".4"/>
-      <circle cx="1090" cy="132" r=".6" opacity=".4"/><circle cx="636" cy="96" r=".6" opacity=".35"/>
-    </g>
-    <circle cx="880" cy="165" r="300" fill="url(#bloom)">
-      <animate attributeName="opacity" values=".8;1;.8" dur="9s" repeatCount="indefinite"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect width="1200" height="320" fill="url(#scan)"/>
+
+    <!-- top market/status rail -->
+    <rect x="0" y="0" width="1200" height="34" fill="#080c11"/>
+    <path d="M0 34H1200" stroke="#202b38"/>
+    <text x="24" y="22" fill="#7c8998" font-family="Consolas,Menlo,monospace" font-size="12">SDROLE / TERMINAL</text>
+    <text x="180" y="22" fill="#ff9d3d" font-family="Consolas,Menlo,monospace" font-size="12">BHS</text>
+    <text x="211" y="22" fill="#57d38c" font-family="Consolas,Menlo,monospace" font-size="12">PUBLIC</text>
+    <circle cx="274" cy="18" r="4" fill="#57d38c">
+      <animate attributeName="opacity" values="1;.22;1" dur="1.6s" repeatCount="indefinite"/>
     </circle>
-    <g>
-      <circle cx="880" cy="165" r="79" fill="none" stroke="url(#beam)" stroke-width="16" opacity=".55" filter="url(#blur14)"/>
-      <circle cx="880" cy="165" r="79" fill="none" stroke="url(#beam)" stroke-width="7" opacity=".75" filter="url(#blur6)"/>
-      <circle cx="880" cy="165" r="79" fill="none" stroke="url(#beam)" stroke-width="2.4" filter="url(#blur1)"/>
-      <circle cx="880" cy="165" r="70" fill="none" stroke="url(#beam)" stroke-width="1" opacity=".6"/>
-    </g>
-    <g transform="rotate(-8 880 165)">
+    <text x="294" y="22" fill="#7c8998" font-family="Consolas,Menlo,monospace" font-size="12">CARTER Δ</text>
+    <text x="363" y="22" fill="#d6dde7" font-family="Consolas,Menlo,monospace" font-size="12">1.95819e-7</text>
+    <text x="472" y="22" fill="#7c8998" font-family="Consolas,Menlo,monospace" font-size="12">S2</text>
+    <text x="500" y="22" fill="#d6dde7" font-family="Consolas,Menlo,monospace" font-size="12">145036 / 0 FAIL</text>
+
+    <!-- left identity -->
+    <text x="48" y="98" fill="#7d8998" font-family="Consolas,Menlo,monospace" font-size="12" letter-spacing="1.4">PROFILE / SDROLE</text>
+    <text x="46" y="158" fill="#f4f6f8" font-family="Arial,Helvetica,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">SDrole</text>
+    <rect x="48" y="177" width="52" height="3" fill="#ff8f32"/>
+    <text x="48" y="211" fill="#c5ccd6" font-family="Consolas,Menlo,monospace" font-size="15">GR RAY TRACING</text>
+    <text x="48" y="236" fill="#c5ccd6" font-family="Consolas,Menlo,monospace" font-size="15">RELATIVISTIC HYDRODYNAMICS</text>
+    <text x="48" y="261" fill="#7e8998" font-family="Consolas,Menlo,monospace" font-size="15">OFFSEC / AUTHORIZED LABS</text>
+
+    <!-- micro chart -->
+    <path d="M49 291 L82 285 L110 288 L139 276 L169 279 L196 266 L226 271 L258 255 L289 259 L316 247"
+          fill="none" stroke="#57d38c" stroke-width="1.5" opacity=".85"/>
+    <path d="M49 291 H316" stroke="#273442" stroke-width=".7"/>
+    <circle r="3.5" fill="#57d38c">
+      <animateMotion dur="5s" repeatCount="indefinite"
+        path="M49 291 L82 285 L110 288 L139 276 L169 279 L196 266 L226 271 L258 255 L289 259 L316 247"/>
+    </circle>
+
+    <!-- black-hole pane -->
+    <circle cx="900" cy="154" r="240" fill="url(#bloom)">
+      <animate attributeName="opacity" values=".72;1;.72" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="900" cy="154" r="74" fill="none" stroke="url(#ring)" stroke-width="15" opacity=".33" filter="url(#glow8)"/>
+    <circle cx="900" cy="154" r="74" fill="none" stroke="url(#ring)" stroke-width="3.2" opacity=".85">
+      <animate attributeName="stroke-width" values="2.6;4;2.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <g transform="rotate(-7 900 154)">
       <g clip-path="url(#upper)">
-        <path fill-rule="evenodd" fill="url(#beam)" opacity=".85"
-              d="M610 165a270 30 0 1 0 540 0a270 30 0 1 0-540 0ZM808 165a72 7 0 1 0 144 0a72 7 0 1 0-144 0Z"/>
+        <path fill-rule="evenodd" fill="url(#disk)" opacity=".84"
+              d="M655 154a245 27 0 1 0 490 0a245 27 0 1 0-490 0ZM833 154a67 6 0 1 0 134 0a67 6 0 1 0-134 0Z"/>
       </g>
     </g>
-    <circle cx="880" cy="165" r="61" fill="#000"/>
-    <circle cx="880" cy="165" r="62" fill="none" stroke="url(#ring)" stroke-width="5" opacity=".7" filter="url(#blur6)"/>
-    <circle cx="880" cy="165" r="62" fill="none" stroke="url(#ring)" stroke-width="1.6"/>
-    <g transform="rotate(-8 880 165)">
+
+    <circle cx="900" cy="154" r="57" fill="#000"/>
+    <circle cx="900" cy="154" r="58" fill="none" stroke="#ffb25b" stroke-width="1.4" opacity=".85"/>
+
+    <g transform="rotate(-7 900 154)">
       <g clip-path="url(#lower)">
-        <path fill-rule="evenodd" fill="url(#beam)" opacity=".6" filter="url(#blur14)"
-              d="M610 165a270 30 0 1 0 540 0a270 30 0 1 0-540 0ZM808 165a72 7 0 1 0 144 0a72 7 0 1 0-144 0Z"/>
-        <path fill-rule="evenodd" fill="url(#beam)"
-              d="M610 165a270 30 0 1 0 540 0a270 30 0 1 0-540 0ZM808 165a72 7 0 1 0 144 0a72 7 0 1 0-144 0Z"/>
-        <g fill="none" stroke="#000" stroke-width=".7" opacity=".28">
-          <ellipse cx="880" cy="165" rx="110" ry="12"/>
-          <ellipse cx="880" cy="165" rx="150" ry="16.5"/>
-          <ellipse cx="880" cy="165" rx="195" ry="21"/>
-          <ellipse cx="880" cy="165" rx="235" ry="26"/>
+        <path fill-rule="evenodd" fill="url(#disk)" opacity=".45" filter="url(#glow8)"
+              d="M655 154a245 27 0 1 0 490 0a245 27 0 1 0-490 0ZM833 154a67 6 0 1 0 134 0a67 6 0 1 0-134 0Z"/>
+        <path fill-rule="evenodd" fill="url(#disk)"
+              d="M655 154a245 27 0 1 0 490 0a245 27 0 1 0-490 0ZM833 154a67 6 0 1 0 134 0a67 7 0 1 0-134 0Z"/>
+        <g fill="none" stroke="#05070a" stroke-width=".7" opacity=".28">
+          <ellipse cx="900" cy="154" rx="105" ry="11"/>
+          <ellipse cx="900" cy="154" rx="145" ry="15.5"/>
+          <ellipse cx="900" cy="154" rx="190" ry="21"/>
+          <ellipse cx="900" cy="154" rx="226" ry="25"/>
         </g>
       </g>
     </g>
-    <rect width="620" height="320" fill="url(#fadeText)"/>
-    <rect x="64" y="96" width="44" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="62" y="170" fill="#f4f6fb" font-family="ui-sans-serif, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="600" letter-spacing="-1.5">SDrole</text>
-    <text x="64" y="212" fill="#c9d1e0" font-family="ui-sans-serif, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="400" letter-spacing=".2">GR ray tracing · Relativistic hydrodynamics</text>
-    <text x="64" y="242" fill="#7f8aa3" font-family="ui-sans-serif, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="400" letter-spacing=".2">Offensive security · Linux systems</text>
-    <rect x=".5" y=".5" width="1199" height="319" rx="17.5" fill="none" stroke="#1b2438"/>
+
+    <!-- telemetry -->
+    <g font-family="Consolas,Menlo,monospace" font-size="11">
+      <text x="725" y="272" fill="#637083">MODEL</text>
+      <text x="773" y="272" fill="#cfd6df">KERR</text>
+      <text x="825" y="272" fill="#637083">SOLVER</text>
+      <text x="880" y="272" fill="#cfd6df">HLLE/PLM/SSPRK2</text>
+      <text x="1008" y="272" fill="#637083">GPU</text>
+      <text x="1037" y="272" fill="#ff9d3d">CUDA</text>
+    </g>
+
+    <!-- animated sweep -->
+    <rect x="-180" y="34" width="90" height="286" fill="#ff9d3d" opacity=".035" transform="skewX(-12)">
+      <animate attributeName="x" from="-180" to="1320" dur="8s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x=".5" y=".5" width="1199" height="319" rx="15.5" fill="none" stroke="#27313d"/>
   </g>
 </svg>
