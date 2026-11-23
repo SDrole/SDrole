@@ -1,24 +1,32 @@
-# SDrole
+<p align="center">
+  <img src="banner.svg" alt="SDrole" width="100%">
+</p>
 
-**Student — numerical physics and scientific computing**
+I write numerical code for general-relativistic ray tracing and relativistic hydrodynamics, and I do offensive security work in authorized lab environments.
 
-[`blackholesim`](https://github.com/SDrole/blackholesim) is my main public project: a C++17/CUDA codebase for Kerr black-hole ray tracing and relativistic hydrodynamics.
+## [blackholesim](https://github.com/SDrole/blackholesim)
 
----
+A numerical simulation of black holes and relativistic fluids, with validation tied to explicit numerical checks.
 
-## Current work
-
-| Area | Implementation |
+| Component | Implementation |
 | --- | --- |
-| Kerr spacetime | Hamiltonian integration of null geodesics |
-| Relativistic geometry | Kerr–Schild and modified Kerr–Schild coordinates |
-| SRHD | Finite-volume solver with HLLE, PLM and SSPRK2 |
-| Validation | Primitive recovery and exact SRHD Riemann comparisons |
-| Compute | CPU/OpenMP and CUDA rendering paths |
-| Data | HDF5 output for the developing GRHD/GRMHD pipeline |
+| Spacetime | Kerr ray tracing; Kerr–Schild geometry for the solver track |
+| Ray tracing | Null geodesics integrated in Hamiltonian form |
+| Fluids | SRHD implemented; GRHD and GRMHD on the roadmap |
+| Imaging | Relativistic accretion-flow rendering |
+| Parallelism | CUDA (GPU), OpenMP (CPU) |
+| I/O | HDF5 |
 
-## Validation
+Rays follow Hamilton's equations with the null constraint
 
-Numerical results, test scope and current limitations are documented in the [`blackholesim` validation section](https://github.com/SDrole/blackholesim#current-validation-status).
+$$H = \\tfrac{1}{2}\, g^{\\mu\\nu}(x)\, p_\\mu p_\\nu = 0, \\qquad \\dot{x}^\\mu = \\frac{\\partial H}{\\partial p_\\mu}, \\qquad \\dot{p}_\\mu = -\\frac{\\partial H}{\\partial x^\\mu}$$
 
-**Stack:** C++17 · CUDA · CMake · OpenMP · HDF5 · Python
+**Verification:** Carter drift ≈ **1.95819 × 10⁻⁷**; S0–S3 baseline: **147 assertions, 0 failures**; S2 recovery sweep: **145,036 sampled states, 0 failures**.
+
+## Security
+
+Offensive-security practice is limited to authorized labs and training environments.
+
+## Stack
+
+C++17 · CUDA · OpenMP · CMake · HDF5 · Python · Linux (Arch) · Git
