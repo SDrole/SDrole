@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050816,40:111B47,75:5425A8,100:7C3AED&text=SDrole&fontColor=FFFFFF&fontSize=62&fontAlignY=38&desc=Physics%20%7C%20Numerical%20Relativity%20%7C%20Scientific%20Computing&descAlignY=58&descSize=17&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050816,40:111B47,75:5425A8,100:7C3AED&text=SDrole&fontColor=FFFFFF&fontSize=62&fontAlignY=38&desc=Scientific%20Computing%20%7C%20Mathematics%20%7C%20Offensive%20Security%20%7C%20Systems&descAlignY=58&descSize=17&animation=fadeIn" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=21&duration=2800&pause=800&color=8B5CF6&center=true&vCenter=true&width=760&lines=Exploring+physics+through+computation;Kerr+black+holes+%E2%80%A2+Ray+tracing+%E2%80%A2+GRMHD;Building+first%2C+understanding+deeper+second;A+plausible+result+is+not+necessarily+a+correct+one" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=21&duration=2800&pause=800&color=8B5CF6&center=true&vCenter=true&width=860&lines=Building+where+theory+meets+implementation;Scientific+computing+%E2%80%A2+Math+%E2%80%A2+OffSec+%E2%80%A2+Systems;Simulate+it+%E2%80%A2+Break+it+%E2%80%A2+Understand+it;Black+boxes+are+meant+to+be+opened" />
 
 <br>
 
@@ -10,7 +10,7 @@
 ![Python](https://img.shields.io/badge/Python-111827?style=for-the-badge&logo=python&logoColor=FACC15)
 ![CUDA](https://img.shields.io/badge/CUDA-111827?style=for-the-badge&logo=nvidia&logoColor=76B900)
 ![Linux](https://img.shields.io/badge/Linux-111827?style=for-the-badge&logo=linux&logoColor=FFFFFF)
-![CMake](https://img.shields.io/badge/CMake-111827?style=for-the-badge&logo=cmake&logoColor=5E81AC)
+![Security](https://img.shields.io/badge/OffSec-111827?style=for-the-badge&logo=kalilinux&logoColor=7DD3FC)
 
 </div>
 
@@ -22,18 +22,18 @@
 
 ## `01.` About me
 
-I’m a **physics student** interested in the point where theoretical physics, numerical methods and software engineering meet.
+I’m interested in technical problems where understanding the system matters more than simply using it.
 
-My main interests revolve around:
+My work and experiments mostly sit at the intersection of:
 
-- 🌌 **Astrophysics**
-- 🕳️ **Black-hole physics**
-- ⚛️ **Quantum mechanics**
-- 🧭 **General relativity**
-- 🧮 **Numerical simulation**
-- 💻 **Scientific computing**
+- 🧮 **Scientific computing**
+- ∑ **Pure & applied mathematics**
+- 🌌 **Physics & numerical simulation**
+- 🛡️ **Offensive security / red teaming**
+- 🐧 **Linux & systems**
+- 🔬 **Technical experimentation**
 
-I like projects where the code is not just expected to *run*, but to reproduce something physically meaningful and survive attempts to prove it wrong.
+I tend to prefer projects that force me to understand the underlying model, protocol, algorithm or architecture instead of treating it as a black box.
 
 </td>
 <td width="44%" valign="top">
@@ -42,18 +42,18 @@ I like projects where the code is not just expected to *run*, but to reproduce s
 
 ```text
 ╭──────────────────────────────╮
-│   CURRENT RESEARCH SPACE     │
+│      CURRENT AREAS           │
 ├──────────────────────────────┤
-│  Kerr spacetime              │
-│  Null geodesics              │
-│  Relativistic hydrodynamics  │
-│  GRMHD                       │
-│  Radiative transfer          │
-│  Numerical validation        │
+│  Scientific simulation       │
+│  Numerical methods           │
+│  Pure mathematics            │
+│  Offensive security          │
+│  Linux / systems             │
+│  Reverse engineering         │
 ╰──────────────────────────────╯
 ```
 
-> **Current objective:** progressively connect black-hole ray tracing, relativistic plasma physics and a self-consistent GRMHD pipeline.
+> **General direction:** build, test, break and understand technical systems from first principles.
 
 </td>
 </tr>
@@ -73,44 +73,23 @@ I like projects where the code is not just expected to *run*, but to reproduce s
 
 ### 🕳️ `blackholesim`
 
-A physics-first black-hole simulation project evolving toward a complete numerical astrophysics pipeline.
+A physics-first numerical simulation project centered on black holes, relativistic fluids and scientific validation.
 
-```text
-observer
-   │
-   ▼
-camera / tetrad
-   │
-   ▼
-null geodesics in Kerr spacetime
-   │
-   ├──────────► horizon
-   │
-   ├──────────► background
-   │
-   ▼
-accretion flow
-   │
-   ▼
-radiative transfer
-   │
-   ▼
-scientific image + diagnostics
-```
+It currently combines:
 
-Current and planned components include:
-
-| Domain | Work |
+| Area | Work |
 |---|---|
 | Geometry | Kerr & Kerr–Schild spacetime |
 | Ray tracing | Hamiltonian null geodesics |
-| Validation | Carter constant & independent numerical checks |
-| Accretion | Novikov–Thorne disk |
-| Hydrodynamics | SRHD finite-volume solver |
-| GRHD | Kerr–Schild curved-spacetime evolution |
-| GRMHD | Magnetic evolution & constrained transport |
-| Radiation | Synchrotron + polarized transfer |
-| GPU | CUDA rendering path |
+| Numerical physics | SRHD / GRHD / GRMHD roadmap |
+| Validation | invariants, convergence, independent oracles |
+| Rendering | relativistic accretion-flow imaging |
+| GPU | CUDA acceleration |
+| Scientific I/O | HDF5-based workflows |
+
+The project is also where I experiment with a broader question:
+
+> **How do you build numerical software that is not only fast and convincing, but difficult to fool?**
 
 <div align="center">
 
@@ -120,37 +99,98 @@ Current and planned components include:
 
 ---
 
-## `04.` Scientific interests
+## `04.` Areas I care about
 
-<div align="center">
+<table>
+<tr>
+<td width="25%" valign="top">
 
-![General Relativity](https://img.shields.io/badge/General_Relativity-312E81?style=flat-square)
-![Astrophysics](https://img.shields.io/badge/Astrophysics-4C1D95?style=flat-square)
-![Quantum Mechanics](https://img.shields.io/badge/Quantum_Mechanics-581C87?style=flat-square)
-![Black Holes](https://img.shields.io/badge/Black_Holes-111827?style=flat-square)
-![Numerical Relativity](https://img.shields.io/badge/Numerical_Relativity-1E3A8A?style=flat-square)
-![GRMHD](https://img.shields.io/badge/GRMHD-5B21B6?style=flat-square)
-![Scientific Computing](https://img.shields.io/badge/Scientific_Computing-0F172A?style=flat-square)
+### 🧪 Scientific computing
 
-</div>
+- numerical physics
+- simulation
+- numerical methods
+- scientific validation
+- GPU computing
+- data pipelines
 
-I’m especially interested in problems where analytical physics eventually reaches the point where computation becomes unavoidable.
+</td>
+<td width="25%" valign="top">
 
-```text
-Kerr geometry
-     ↓
-null geodesics
-     ↓
-relativistic fluids
-     ↓
-radiation
-     ↓
-observable images
-```
+### ∑ Mathematics
+
+- pure mathematics
+- analysis
+- mathematical physics
+- numerical analysis
+- proof-oriented reasoning
+- hard open problems
+
+</td>
+<td width="25%" valign="top">
+
+### 🛡️ Offensive security
+
+- red teaming
+- network security
+- Active Directory labs
+- web / API testing
+- Wi-Fi auditing
+- reverse engineering
+
+</td>
+<td width="25%" valign="top">
+
+### 🐧 Systems
+
+- Linux
+- Arch-based environments
+- boot / live systems
+- shell tooling
+- local infrastructure
+- low-level debugging
+
+</td>
+</tr>
+</table>
 
 ---
 
-## `05.` Tools & technologies
+## `05.` Scientific & technical interests
+
+<div align="center">
+
+![Astrophysics](https://img.shields.io/badge/Astrophysics-4C1D95?style=flat-square)
+![General Relativity](https://img.shields.io/badge/General_Relativity-312E81?style=flat-square)
+![Quantum Mechanics](https://img.shields.io/badge/Quantum_Mechanics-581C87?style=flat-square)
+![Numerical Methods](https://img.shields.io/badge/Numerical_Methods-1E3A8A?style=flat-square)
+![Pure Mathematics](https://img.shields.io/badge/Pure_Mathematics-3B0764?style=flat-square)
+![Scientific Computing](https://img.shields.io/badge/Scientific_Computing-0F172A?style=flat-square)
+![Red Team](https://img.shields.io/badge/Red_Team-7F1D1D?style=flat-square)
+![Reverse Engineering](https://img.shields.io/badge/Reverse_Engineering-374151?style=flat-square)
+![Linux Systems](https://img.shields.io/badge/Linux_Systems-111827?style=flat-square)
+
+</div>
+
+A few themes that keep coming back in what I build and study:
+
+```text
+mathematical model
+        ↓
+implementation
+        ↓
+measurement
+        ↓
+adversarial testing
+        ↓
+understanding
+```
+
+Whether the subject is a physical simulation, a network service or a low-level system, I’m most interested in the point where theory meets actual behavior.
+
+---
+
+## `06.` Tools & technologies
 
 <div align="center">
 
@@ -161,77 +201,79 @@ observable images
 ![CUDA](https://img.shields.io/badge/NVIDIA-CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![OpenMP](https://img.shields.io/badge/Parallel-OpenMP-2563EB?style=flat-square)
 ![HDF5](https://img.shields.io/badge/Data-HDF5-7C3AED?style=flat-square)
-![Numerical Methods](https://img.shields.io/badge/Numerical-Methods-4338CA?style=flat-square)
-![Physics](https://img.shields.io/badge/Physics-Simulation-6D28D9?style=flat-square)
+![Nmap](https://img.shields.io/badge/Network-Nmap-1E40AF?style=flat-square)
+![Aircrack-ng](https://img.shields.io/badge/Wireless-Aircrack--ng-991B1B?style=flat-square)
+![Git](https://img.shields.io/badge/Workflow-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 </div>
 
 ---
 
-## `06.` How I approach scientific code
+## `07.` How I approach technical work
 
 ```cpp
-while (!result.isConvincing()) {
-    derive();
-    implement();
-    test();
-    searchForCounterexamples();
-    compareWithIndependentReference();
+while (!understood(system)) {
+    model(system);
+    build(system);
+    test(system);
+    break_assumptions(system);
+    compare_against_independent_evidence();
 }
 ```
 
-Some principles I try to follow:
+Some principles I tend to follow:
 
 ```text
-[01] Physical plausibility ≠ physical correctness
-[02] Test invariants, not appearances
-[03] Prefer independent oracles
-[04] Measure convergence
-[05] Instrument numerical fallbacks
-[06] Make unsupported states fail loudly
-[07] Try to break your own result
+[01] Understand the model before trusting the output
+[02] Treat black boxes as temporary
+[03] Prefer independent validation
+[04] Measure instead of assuming
+[05] Make failure modes visible
+[06] Reproduce before generalizing
+[07] Try to falsify your own result
+[08] Keep tooling minimal when minimal is enough
 ```
 
 ---
 
-## `07.` Things I’m exploring
+## `08.` Things I’m exploring
 
 <table>
 <tr>
 <td align="center" width="25%">
 
-### Kerr
-Frame dragging  
-Photon regions  
-ISCO  
-Ergosphere
+### Physics
+Astrophysics  
+Relativity  
+Quantum mechanics  
+Numerical simulation
 
 </td>
 <td align="center" width="25%">
 
-### Relativity
-3+1 formalism  
-Kerr–Schild  
-Conservative schemes  
-Geodesics
+### Mathematics
+Analysis  
+Numerical analysis  
+Mathematical physics  
+Open problems
 
 </td>
 <td align="center" width="25%">
 
-### Plasma
-SRHD  
-GRHD  
-GRMHD  
-MRI
+### Security
+Red teaming  
+Network / AD  
+Wireless  
+Reverse engineering
 
 </td>
 <td align="center" width="25%">
 
-### Radiation
-Synchrotron  
-Redshift  
-Polarization  
-Faraday effects
+### Systems
+Linux  
+Arch  
+Live environments  
+Tooling / debugging
 
 </td>
 </tr>
@@ -239,7 +281,24 @@ Faraday effects
 
 ---
 
-## `08.` GitHub
+## `09.` Beyond simulations
+
+Not everything I put here will be a physics simulator.
+
+This profile is also a place for:
+
+- small security tools and lab experiments;
+- mathematical notebooks and computational explorations;
+- reverse-engineering exercises;
+- systems utilities;
+- Linux tooling;
+- data-processing experiments;
+- API / protocol experiments;
+- technical prototypes that are useful mainly because they teach me how something works.
+
+---
+
+## `10.` GitHub
 
 <div align="center">
 
@@ -255,27 +314,24 @@ Faraday effects
 
 ---
 
-## `09.` Philosophy
+## `11.` Philosophy
 
 <div align="center">
 
-### “If the only argument for a simulation is that it looks right,  
-### the validation is not finished.”
+### “Build it. Measure it. Break your assumptions. Understand what remains.”
 
 <br>
 
 ```text
 curiosity
    +
-mathematics
+theory
    +
-physics
+experimentation
    +
-computation
-   +
-skepticism
+adversarial thinking
    =
-better models
+understanding
 ```
 
 </div>
@@ -286,8 +342,8 @@ better models
 
 ### Thanks for visiting.
 
-I mainly use GitHub to document what I’m building, what I’m learning,  
-and where the physics still has ways to prove me wrong.
+I use GitHub as a working space for technical projects, experiments and ideas  
+across scientific computing, mathematics, security and systems.
 
 <br>
 
