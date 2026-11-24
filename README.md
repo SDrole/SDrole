@@ -47,3 +47,16 @@ General-relativistic magnetohydrodynamics (GRMHD).
   <img src="https://img.shields.io/badge/HDF5-f0a8c7?style=flat-square" alt="HDF5">
   <img src="https://img.shields.io/badge/Python-ffdb75?style=flat-square" alt="Python">
 </p>
+
+### GitHub activity
+
+<p>
+  <img src="https://github-readme-stats.shion.dev/api?username=SDrole&amp;theme=tokyonight&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false" alt="SDrole public GitHub statistics" width="49%">
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=SDrole&amp;theme=tokyonight&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact" alt="Most used languages in SDrole’s public repositories" width="38%">
+</p>
+
+<p>
+  <img src="https://streak-stats.demolab.com/?user=SDrole&amp;theme=tokyonight&amp;hide_border=false" alt="SDrole GitHub contribution streak" width="55%">
+</p>
+
+<!-- GitHub activity cards generated with GPRM (https://gprm.itsvg.in/) -->
