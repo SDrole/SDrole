@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="152" viewBox="0 0 1200 152" role="img" aria-labelledby="title desc">
+  <title id="title">BlackHoleSim validation</title>
+  <desc id="desc">Relative Carter drift of 1.95819e-7, 147 assertions with zero failures, and 145,036 S2 states with zero failures.</desc>
+  <style>
+    .signal { animation: pass 2.6s ease-out 1 both; }
+    @keyframes pass { from { transform: translateX(0); opacity: 0; } 22% { opacity: .85; } to { transform: translateX(324px); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .signal { animation: none; display: none; } }
+  </style>
+  <g transform="translate(12 8)">
+    <rect width="376" height="136" rx="14" fill="#101722" stroke="#ffb45e" stroke-opacity=".48"/>
+    <path d="M22 112h332" stroke="#ffb45e" stroke-opacity=".32" stroke-width="2"/>
+    <rect class="signal" x="22" y="111" width="8" height="2" rx="1" fill="#ffb45e" opacity="0" style="animation-delay:0ms"/>
+    <text x="22" y="31" fill="#ffb45e" font-family="Consolas,monospace" font-size="15" font-weight="bold">CARTER DRIFT</text>
+    <text x="22" y="73" fill="#f3f7ff" font-family="system-ui,sans-serif" font-size="34" font-weight="700">1.95819e-7</text>
+    <text x="22" y="98" fill="#becbdd" font-family="system-ui,sans-serif" font-size="15">Relative invariant drift</text>
+  </g>
+  <g transform="translate(412 8)">
+    <rect width="376" height="136" rx="14" fill="#101722" stroke="#64f2bb" stroke-opacity=".48"/>
+    <path d="M22 112h332" stroke="#64f2bb" stroke-opacity=".32" stroke-width="2"/>
+    <rect class="signal" x="22" y="111" width="8" height="2" rx="1" fill="#64f2bb" opacity="0" style="animation-delay:180ms"/>
+    <text x="22" y="31" fill="#64f2bb" font-family="Consolas,monospace" font-size="15" font-weight="bold">REGRESSION TESTS</text>
+    <text x="22" y="73" fill="#f3f7ff" font-family="system-ui,sans-serif" font-size="34" font-weight="700">147</text>
+    <text x="22" y="98" fill="#becbdd" font-family="system-ui,sans-serif" font-size="15">Assertions · 0 failures</text>
+  </g>
+  <g transform="translate(812 8)">
+    <rect width="376" height="136" rx="14" fill="#101722" stroke="#93baff" stroke-opacity=".48"/>
+    <path d="M22 112h332" stroke="#93baff" stroke-opacity=".32" stroke-width="2"/>
+    <rect class="signal" x="22" y="111" width="8" height="2" rx="1" fill="#93baff" opacity="0" style="animation-delay:360ms"/>
+    <text x="22" y="31" fill="#93baff" font-family="Consolas,monospace" font-size="15" font-weight="bold">S2 VALIDATION</text>
+    <text x="22" y="73" fill="#f3f7ff" font-family="system-ui,sans-serif" font-size="34" font-weight="700">145,036</text>
+    <text x="22" y="98" fill="#becbdd" font-family="system-ui,sans-serif" font-size="15">States · 0 failures</text>
+  </g>
+</svg>

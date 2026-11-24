@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/blackholesim-hero.jpg" alt="BlackHoleSim render of a Schwarzschild black hole and its accretion disk" width="100%">
+  <img src="banner.svg" alt="SDrole — numerical physics, relativistic hydrodynamics and authorized security labs" width="100%">
 </p>
 
 <p>
@@ -9,7 +9,7 @@
 
 Student working on numerical physics and scientific computing. Offensive-security practice is limited to authorized labs and training environments.
 
-## [blackholesim](https://github.com/SDrole/blackholesim)
+## BlackHoleSim · [Explore the code](https://github.com/SDrole/blackholesim)
 
 C++17/CUDA codebase for Kerr ray tracing and relativistic hydrodynamics.
 
@@ -19,10 +19,31 @@ C++17/CUDA codebase for Kerr ray tracing and relativistic hydrodynamics.
 | Hydrodynamics | SRHD · HLLE · PLM · SSPRK2 · exact Riemann oracle |
 | Compute / I/O | OpenMP · CUDA · HDF5 |
 
-**Validation:** `Carter Δ = 1.95819e-7` · `147 assertions / 0 failures` · `145,036 S2 states / 0 failures`
+### Validation
+
+<img src="assets/blackholesim-validation.svg" alt="Carter drift: 1.95819e-7. 147 assertions and 145,036 S2 states checked, with zero failures." width="100%">
+
+| Check | Result |
+| --- | --- |
+| Relative Carter drift | `1.95819e-7` |
+| Regression assertions | `147 / 0 failures` |
+| S2 validation states | `145,036 / 0 failures` |
+
+### In progress
+
+General-relativistic magnetohydrodynamics (GRMHD).
 
 <!-- latest:start -->
 **Latest:** [`blackholesim`](https://github.com/SDrole/blackholesim/commits/main) — active development
 <!-- latest:end -->
 
-`C++17` · `CUDA` · `OpenMP` · `CMake` · `HDF5` · `Python`
+### Toolchain
+
+<p>
+  <img src="https://img.shields.io/badge/C%2B%2B17-f2a444?style=flat-square" alt="C++17">
+  <img src="https://img.shields.io/badge/CUDA-70d9a6?style=flat-square" alt="CUDA">
+  <img src="https://img.shields.io/badge/OpenMP-77b9ff?style=flat-square" alt="OpenMP">
+  <img src="https://img.shields.io/badge/CMake-aab2ff?style=flat-square" alt="CMake">
+  <img src="https://img.shields.io/badge/HDF5-f0a8c7?style=flat-square" alt="HDF5">
+  <img src="https://img.shields.io/badge/Python-ffdb75?style=flat-square" alt="Python">
+</p>
