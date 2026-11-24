@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Photon trajectories near a black hole</title>
+  <desc id="desc">A stylized diagram with colored guide curves, a dark central shadow and a thin accretion disk.</desc>
+  <defs>
+    <linearGradient id="background"><stop stop-color="#0a101a"/><stop offset=".54" stop-color="#171328"/><stop offset="1" stop-color="#0a101a"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#ffb966" stop-opacity=".55"/><stop offset="1" stop-color="#ffb966" stop-opacity="0"/></radialGradient>
+    <linearGradient id="disk"><stop stop-color="#f69442" stop-opacity="0"/><stop offset=".36" stop-color="#ffb966"/><stop offset=".63" stop-color="#fce1a7"/><stop offset="1" stop-color="#f69442" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#9aadd1" stroke-opacity=".12"/></pattern>
+  </defs>
+  <style>
+    .pulse { animation: trace 4.8s ease-in-out 1 both; stroke-dasharray: 26 974; }
+    @keyframes trace { from {stroke-dashoffset: 26; opacity:0} 14%, 78% {opacity:1} to {stroke-dashoffset:-974; opacity:0} }
+    @media (prefers-reduced-motion: reduce) { .pulse {display:none} }
+  </style>
+  <rect x="1" y="1" width="1198" height="228" rx="18" fill="url(#background)" stroke="#43405c"/>
+  <rect x="2" y="2" width="1196" height="226" rx="17" fill="url(#grid)"/>
+  <ellipse cx="600" cy="115" rx="225" ry="108" fill="url(#halo)"/>
+  <g fill="none" stroke-linecap="round">
+    <path id="upper" d="M45 144 C242 147 381 109 499 65 S676 29 755 70 S972 113 1155 73" stroke="#ffbc70" stroke-opacity=".54"/>
+    <path id="middle" d="M45 88 C291 59 419 68 516 134 S644 177 692 111 S865 44 1155 114" stroke="#83f0c7" stroke-opacity=".48"/>
+    <path id="lower" d="M45 175 C274 163 467 201 554 174 S625 60 686 67 S839 161 1155 175" stroke="#b99aff" stroke-opacity=".52"/>
+  </g>
+  <ellipse cx="600" cy="117" rx="175" ry="23" fill="none" stroke="url(#disk)" stroke-width="4" transform="rotate(-10 600 117)"/>
+  <circle cx="600" cy="115" r="49" fill="#080a10" stroke="#ffbd74" stroke-width="1.8"/>
+  <path d="M427 143 Q565 166 773 87 Q612 131 427 143Z" fill="url(#disk)" opacity=".92"/>
+  <g fill="none" stroke-width="2.6" stroke-linecap="round">
+    <path class="pulse" pathLength="1000" d="M45 144 C242 147 381 109 499 65 S676 29 755 70 S972 113 1155 73" stroke="#ffe1aa"/>
+    <path class="pulse" pathLength="1000" d="M45 88 C291 59 419 68 516 134 S644 177 692 111 S865 44 1155 114" stroke="#aafad9" style="animation-delay:.35s"/>
+    <path class="pulse" pathLength="1000" d="M45 175 C274 163 467 201 554 174 S625 60 686 67 S839 161 1155 175" stroke="#d2bdff" style="animation-delay:.7s"/>
+  </g>
+</svg>

@@ -2,36 +2,36 @@
   <img src="banner.svg" alt="SDrole — numerical physics, relativistic hydrodynamics and authorized security labs" width="100%">
 </p>
 
-<p>
-  <a href="https://github.com/SDrole/blackholesim/actions/workflows/ci.yml"><img src="https://github.com/SDrole/blackholesim/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/SDrole/blackholesim/commits/main"><img src="https://img.shields.io/github/last-commit/SDrole/blackholesim?style=flat-square&label=last%20commit&labelColor=161b22&color=2ea043" alt="Last commit"></a>
-</p>
+**I build relativistic simulations and write the tests that tell me when to trust them.**
 
-Student working on numerical physics and scientific computing. Offensive-security practice is limited to authorized labs and training environments.
+I work on numerical physics in C++, from tracing photons through curved spacetime to testing how a solver recovers the state of a relativistic fluid. I practice offensive security in authorized labs and training environments.
 
-## BlackHoleSim · [Explore the code](https://github.com/SDrole/blackholesim)
+## [BlackHoleSim](https://github.com/SDrole/blackholesim)
 
-C++17/CUDA codebase for Kerr ray tracing and relativistic hydrodynamics.
+[![CI](https://github.com/SDrole/blackholesim/actions/workflows/ci.yml/badge.svg)](https://github.com/SDrole/blackholesim/actions/workflows/ci.yml)
+[![Last commit](https://img.shields.io/github/last-commit/SDrole/blackholesim?style=flat-square&label=last%20commit&labelColor=161b22&color=2ea043)](https://github.com/SDrole/blackholesim/commits/main)
 
-| Area | Implemented |
+<img src="assets/photon-trajectories.svg" alt="Schematic of three colored light paths near a black hole and its accretion disk" width="100%">
+
+*Photon trajectories and accretion disk schematic.*
+
+### 🟠 Ray tracing in Kerr spacetime
+
+I integrate Hamiltonian null geodesics and model a Novikov–Thorne accretion disk. The renderer exports redshift, ray classification and Carter drift alongside the image. [Read the physics notes](https://github.com/SDrole/blackholesim#physics)
+
+### 🟢 Relativistic hydrodynamics
+
+I develop a special-relativistic solver alongside the renderer. The test suite checks primitive-variable recovery across sampled fluid states and compares the numerical solution against an independent exact SRHD Riemann solver. [Explore the solver](https://github.com/SDrole/blackholesim/tree/main/grmhd)
+
+| Check | Documented result |
 | --- | --- |
-| Geodesics | Hamiltonian null-ray integration in Kerr spacetime |
-| Hydrodynamics | SRHD · HLLE · PLM · SSPRK2 · exact Riemann oracle |
-| Compute / I/O | OpenMP · CUDA · HDF5 |
+| Maximum relative Carter drift in the ray-tracing regression | `1.96 × 10⁻⁷` against a `10⁻⁶` threshold |
+| Regression suite | `147` assertions, zero failures |
+| S2 primitive/conserved recovery | `145,036` sampled states, zero failures |
 
-### Validation
+### 🟣 In progress · GRMHD
 
-<img src="assets/blackholesim-validation.svg" alt="Carter drift: 1.95819e-7. 147 assertions and 145,036 S2 states checked, with zero failures." width="100%">
-
-| Check | Result |
-| --- | --- |
-| Relative Carter drift | `1.95819e-7` |
-| Regression assertions | `147 / 0 failures` |
-| S2 validation states | `145,036 / 0 failures` |
-
-### In progress
-
-General-relativistic magnetohydrodynamics (GRMHD).
+The next goal is to use snapshots from a general-relativistic magnetohydrodynamics solver as inputs to the renderer. [Read the scientific roadmap](https://github.com/SDrole/blackholesim/blob/main/docs/ROADMAP.md)
 
 <!-- latest:start -->
 **Latest:** [`blackholesim`](https://github.com/SDrole/blackholesim/commits/main) — active development
@@ -39,24 +39,13 @@ General-relativistic magnetohydrodynamics (GRMHD).
 
 ### Toolchain
 
-<p>
-  <img src="https://img.shields.io/badge/C%2B%2B17-f2a444?style=flat-square" alt="C++17">
-  <img src="https://img.shields.io/badge/CUDA-70d9a6?style=flat-square" alt="CUDA">
-  <img src="https://img.shields.io/badge/OpenMP-77b9ff?style=flat-square" alt="OpenMP">
-  <img src="https://img.shields.io/badge/CMake-aab2ff?style=flat-square" alt="CMake">
-  <img src="https://img.shields.io/badge/HDF5-f0a8c7?style=flat-square" alt="HDF5">
-  <img src="https://img.shields.io/badge/Python-ffdb75?style=flat-square" alt="Python">
-</p>
+![C++17](https://img.shields.io/badge/C%2B%2B17-ffbc70?style=flat-square)
+![CUDA](https://img.shields.io/badge/CUDA-83f0c7?style=flat-square)
+![OpenMP](https://img.shields.io/badge/OpenMP-83f0c7?style=flat-square)
+![CMake](https://img.shields.io/badge/CMake-b99aff?style=flat-square)
+![HDF5](https://img.shields.io/badge/HDF5-b99aff?style=flat-square)
+![Python](https://img.shields.io/badge/Python-ffbc70?style=flat-square)
 
-### GitHub activity
+<img src="https://github-readme-stats.shion.dev/api/top-langs/?username=SDrole&amp;theme=tokyonight&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact" alt="Most used languages in SDrole’s public repositories">
 
-<p>
-  <img src="https://github-readme-stats.shion.dev/api?username=SDrole&amp;theme=tokyonight&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false" alt="SDrole public GitHub statistics" width="49%">
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=SDrole&amp;theme=tokyonight&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact" alt="Most used languages in SDrole’s public repositories" width="38%">
-</p>
-
-<p>
-  <img src="https://streak-stats.demolab.com/?user=SDrole&amp;theme=tokyonight&amp;hide_border=false" alt="SDrole GitHub contribution streak" width="55%">
-</p>
-
-<!-- GitHub activity cards generated with GPRM (https://gprm.itsvg.in/) -->
+<!-- Language card generated with GPRM (https://gprm.itsvg.in/) -->
