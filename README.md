@@ -38,7 +38,7 @@ A C++17/CUDA project for Kerr ray tracing and relativistic fluid simulation. I�
 [![Last commit](https://img.shields.io/github/last-commit/SDrole/blackholesim?style=flat-square&label=last%20commit&labelColor=161b22&color=2ea043)](https://github.com/SDrole/blackholesim/commits/main)
 
 <!-- latest:start -->
-**Latest:** [`blackholesim`](https://github.com/SDrole/blackholesim/commits/main) — active development
+**Latest:** [`6ac92d4`](https://github.com/SDrole/blackholesim/commit/6ac92d468ce4e3975ecc3e67a8e1d417c9983373) — chore: harden repository before public release
 <!-- latest:end -->
 
 ## Languages on GitHub
