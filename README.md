@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="SDrole" width="100%">
+  <img src="assets/blackholesim-hero.jpg" alt="BlackHoleSim render of a Schwarzschild black hole and its accretion disk" width="100%">
 </p>
 
 <p>
