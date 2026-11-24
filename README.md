@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="SDrole’s animated terminal banner" width="100%">
+  <img src="assets/sdrole-hero.svg" alt="SDrole — software development, physics and mathematics, offensive security. C++, quantum mechanics, astrophysics and red teaming." width="100%">
 </p>
 
 # SDrole
